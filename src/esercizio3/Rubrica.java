@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Rubrica {
 
-	static Map<String, String> rubrica = new HashMap<>();
+	private static Map<String, String> rubrica = new HashMap<>();
 
 	public static void aggiungiContatto(String nome, String numero) {
 
