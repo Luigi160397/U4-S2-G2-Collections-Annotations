@@ -15,10 +15,15 @@ public class Main1 {
 			try {
 				System.out.print("Inserisci il numero di parole da inserire: ");
 				n = scan.nextInt();
+				if (n < 0) {
+					throw new MinoreDi0Exception("Sono ammessi solo numeri! Inserisci un numero intero positivo.");
+				}
 				break;
 			} catch (InputMismatchException e) {
 				System.out.println("Input non valido. Inserisci un numero intero positivo.");
 				scan.nextLine();
+			} catch (MinoreDi0Exception e) {
+				System.out.println(e.getMessage());
 			}
 		}
 		Set<String> parole = new HashSet<>();
