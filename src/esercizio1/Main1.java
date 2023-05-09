@@ -28,24 +28,20 @@ public class Main1 {
 		}
 		Set<String> parole = new HashSet<>();
 		Set<String> paroleDuplicate = new HashSet<>();
-		if (n > 0) {
 
-			for (int i = 0; i < n; i++) {
-				System.out.print("Inserisci la parola numero " + (i + 1) + ": ");
-				String parola = scan.next();
+		for (int i = 0; i < n; i++) {
+			System.out.print("Inserisci la parola numero " + (i + 1) + ": ");
+			String parola = scan.next();
 
-				if (parole.contains(parola)) {
-					paroleDuplicate.add(parola);
-				} else {
-					parole.add(parola);
-				}
+			if (parole.contains(parola)) {
+				paroleDuplicate.add(parola);
+			} else {
+				parole.add(parola);
 			}
 
 			System.out.println("Parole duplicate: " + paroleDuplicate);
 			System.out.println("Numero di parole distinte: " + parole.size());
 			System.out.println("Elenco delle parole distinte: " + parole);
-		} else {
-			System.out.println("Input non valido!");
 		}
 
 		scan.close();
