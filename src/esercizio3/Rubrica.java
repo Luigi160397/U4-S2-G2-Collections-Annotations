@@ -53,7 +53,7 @@ public class Rubrica {
 	}
 
 	public static void stampaRubrica() {
-		System.out.println(rubrica);
+		System.out.println("Contatti in rubrica: " + rubrica);
 	}
 
 }
