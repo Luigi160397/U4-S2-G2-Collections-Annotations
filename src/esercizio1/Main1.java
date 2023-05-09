@@ -15,8 +15,9 @@ public class Main1 {
 			try {
 				System.out.print("Inserisci il numero di parole da inserire: ");
 				n = scan.nextInt();
-				if (n < 0) {
-					throw new MinoreDi0Exception("Sono ammessi solo numeri! Inserisci un numero intero positivo.");
+				if (n <= 0) {
+					throw new MinoreDi0Exception(
+							"Sono ammessi solo numeri positivi! Inserisci un numero intero positivo.");
 				}
 				break;
 			} catch (InputMismatchException e) {
